@@ -1,0 +1,8 @@
+#+SETUPFILE: ../org-templates/level-1.org
+
+* Footer 
+#+NAME: index-html  
+#+BEGIN_SRC html  
+
+
+#+END_SRC
