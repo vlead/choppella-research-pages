@@ -9,52 +9,45 @@
 #+PROPERTY: exports doc
 #+LATEX: Literal LaTeX code for export
 
-# choppella-research-pages This repository has the detailed structure
-of the Choppella's research lab web pages and the steps to be followed
-to update the content of the pages.
-
 * Introduction
-  This document details the structure of the Choppella's research
-  lab web pages and the steps to be followed to update the content of
-  the pages.
+  This document details the structure of the Choppella's
+  research lab web pages and the steps to be followed to
+  update the content of the pages.
 * Repository 
-  Follow the [[https://github.com/vlead/choppella-research-pages][link]] to access the repository of Gitlab containing
-  sources of these pages.
+  Follow the [[https://github.com/vlead/choppella-research-pages][link]] to access the repository of Gitlab
+  containing sources of these pages.
 
 * Structure 
   This repository is organized as follows : 
-  Structure and the purpose of each directory 
-  choppella research lab
-
-** Strcuture of the repo
+** Structure of the repo
    The repository must have a src folder and all the source files must
    be under src directory.  Example ::
 
-  |--- README.org
-  |--- make
-  |--- init
-  |--- index.org
-       |--- src
-            |--- header.org
-            |--- slider.org
-	    |--- home.org
-	    |--- team.org
-            |--- research.org
-	    |--- publication.org
-	    |--- teaching.org
-	    |--- jobs.org
-	    |--- contact.org
-            |--- style
-	         |--- style 
-	              |--- style.css
-	         |--- js
-	              |--- main.js
+  |---README.org
+  |---make
+  |---init
+  |---index.org
+      |---src
+          |---header.org
+          |---slider.org
+	  |---home.org
+	  |---team.org
+          |---research.org
+	  |---publication.org
+	  |---teaching.org
+	  |---jobs.org
+	  |---contact.org
+          |---style
+	       |---style 
+	           |---style.css
+	       |---js
+	           |---main.js
 
 * Steps to build 
-  Build Since code is situated within the narrative, one has to build
-  from these documents to generate code and documents for
-  publication. While the code is understood by the compiler, the
-  documents published in htm.
+  Since code is situated within the narrative, one has to
+  build these documents to generate code and documents for
+  publication. While the code is understood by the compiler,
+  the documents will be published in html.
 
 ** Steps to build and run the appliciton
    Refer to a sample makefile for reference. 
@@ -80,13 +73,11 @@ to update the content of the pages.
    
 ** Run the following command to build 
    make -k all
-
-
-
 ** Build Directory and .gitignore
-   The build process generates a build folder containing docs and code
-   directories. This build folder is not version controlled since it
-   is generated. To allow git to ignore generated files.
+   The build process generates a build folder containing
+   docs and code directories. This build folder is not
+   version controlled since it is generated and to allow git
+   to ignore generated files.
 
     build/
     code/
@@ -98,116 +89,152 @@ to update the content of the pages.
     
 * Steps to host and test
   
-  - Host source files (build) in the respective server 
+  - Host source files (build) in the respective server
     
 * Steps to add content for pages
 ** Index.org 
    Purpose :: This file contains all source (.org) pages. 
-   Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/index.org][index]]
+
+   Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/index.org][index]].org
+
    Instructions ::
-   1. Include all pages in the index.org using the following command
-      example:  #+include: "./src/header.org"
+   1. Include all pages in the index.org using the following
+      command example: #+include: "./src/header.org"
+
 ** Header section 
-   Purpose :: Header section consists logo research lab name and search bar.
-   Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/header.org][header]]
-   Instructions :: 
+   Purpose :: Header section consists logo research lab name
+   and search bar.  
+
+   Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/header.org][header.org]]
+
+   Instructions::
    1. Go to the header.org
    2. Change the logo and name 
+
 ** Slider section 
-   Purpose :: Slider section consists :  
-   1. Slider :  This will slide different posters.
-   2. Latest updates : Latest updates will have current updates of positions at research center.
-   Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/slider.org][slider]]
+   Purpose:: Slider section consists of 
+   1. Slider : This will slide different posters.
+   2. Latest updates : Latest updates will have current
+      updates of positions at research center.  
+      
+   Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/slider.org][slider]].org
+   
    Instructions :: 
    1. Go to the slider.org
    2. Upload the files on [[files.vlabs.ac.in/][fileserver]]
-   3. Take the url and add in the slider section. 
+   3. Take the url and add in the slider section.
      
 ** Home
-   Purpose :: Home section consists details about research lab,
-   content should add in the home.org. 
-   Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/home.org][home]]
-   Instructions :: 
+   
+   Purpose:: Home section consists details about research
+   lab, content should add in the home.org.  
+
+   Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/home.org][home]].org 
+
+   Instructions::
    1. Go to the home.org
    2. Add the content about search lab in the home menu. 
 
 ** Team
-   Purpose :: Team section consists students details like photo, name and
+   Purpose:: Team section consists students details like photo, name and
    research topic.  photos (Professor/Students) needs to be update.
    content should add in the team.org. 
-   Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/students.org][team]]
-   Instructions :: 
+
+   Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/students.org][team.org]]
+
+   Instructions:: 
    1. Go to the team.org
-   2. Upload photos on [[files.vlabs.ac.in/][fileserver]] and update url on team section.  
-   3. Add the student name in the "name field" and research topic name on "research-topic field". 
+   2. Upload photos on [[files.vlabs.ac.in/][fileserver]] and update url on team
+      section.
+   3. Add the student name in the "name field" and research
+      topic name on "research-topic field".
 
 ** Research 
-   Purpose :: Research section consists research areas and funded projects
-   details.  Content added from the Content added from the pascal [[http://pascal.iiit.ac.in/~choppell/research/][link]]
-   website content should add in the research.org. 
-   Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/research.org][research]]
-   Instructions : 
+   Purpose:: Research section consists research areas and
+   funded projects details.  Content added from the Content
+   added from the pascal [[http://pascal.iiit.ac.in/~choppell/research/][link]] website content should add in
+   the research.org.
+
+   Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/research.org][research.org]]
+   
+   Instructions:: 
    1. Go to the research.org 
    2. Add research topic in the resection section. 
   
 ** Publications 
-   Purpose :: Publicaitons section consists detaisl of all published papers like
+   Purpose:: Publicaitons section consists detaisl of all published papers like
    paper title, conference details, author names, DOI details (along
    with url), website details (along with url), published year and
    pages.  Content added from the Content added from the pascal [[http://pascal.iiit.ac.in/~choppell/research/][link]]
    website
-   Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/publications.org][publications]]
-   Instructions :: 
+   
+   Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/publications.org][publications.org]]
+   
+   Instructions:: 
    1. Go to the publication.org
    2. Add publicaiton title, conference name, authors details, DOI
       details and published website details in the publicaiton menu
    
 ** Teaching  
-   Purpose :: Teaching section consists detaisl of all teaching topics content
+   Purpose:: Teaching section consists detaisl of all teaching topics content
    added from the Content added from the pascal [[http://pascal.iiit.ac.in/~choppell/research/][link]] website if more
    content needs to be added update the content in the section of
    teaching.org.
-   Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/teaching.org][teaching]]
-   Instructions :: 
+
+   Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/teaching.org][teaching]].org
+
+   Instructions:: 
    1. Go to the teach.org
    2. Add course details in the teaching menu
    
 ** Job 
-   Purpose :: Job Section consists details of current positions like PhD
+   Purpose:: Job Section consists details of current positions like PhD
    Positions, MS by Research Positions, 2018 Summer Internships and
    BTech and MTech Projects. if more content needs to be added update
    the content in the section of job.org.
-   Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/job.org][job]] 
-   Instructions :: 
+
+   Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/job.org][job.org]] 
+
+   Instructions:: 
    1. Go to the job.org
    2. Add content about job details in the job menu
    
 ** Contact 
-   Purpose :: Contact Section consists details of research lab Location, Mail
+   Purpose:: Contact Section consists details of research lab Location, Mail
    address, office/admin Phone numbers, professor email id, route map,
    Office Hours for 2018 Monsoon and Appointment details. all details
    added form the pascal [[http://pascal.iiit.ac.in/~choppell/research/][link]] website.  if more details needs to be
    added, update in the section of contact.org.
-   Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/contact-us.org][contanct.org]]
-   Instrucitons :: 
+
+   Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/contact-us.org][contact.org]]
+
+   Instructions:: 
    1. Go to the contact.org
    2. Update the contact details in the job menu
    
 ** Footer section 
-   Purpose :: Footer section consists only insitute logo and research lab name
+   Purpose:: Footer section consists only insitute logo and research lab name
    details. if more details needs to be added, update in the section
    of footer.org.
-   Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/footer.org][footer]]
-   Instrucions :: 
+
+   Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/footer.org][footer]].org
+
+   Instrucions:: 
    1. Go to the footer.org
-   2. Add the details about lab details and copyright details.
+   2. Add the details about lab details and copyright
+      details.
+
 ** Styling 
-   Purpose : Style.org having whole website styling details. We can
-   add enhancement stylings if needed more enhancements.  
-   Filename with link :: [[https://github.com/vlead/choppella-research-pages/style.org][styles]]
-   File Instruction :: 
+   Purpose:: Style.org having whole website styling
+   details. We can add enhancement stylings if needed more
+   enhancements.
+
+   Filename with link:: [[https://github.com/vlead/choppella-research-pages/style.org][styles]].org
+
+   File Instruction:: 
    1. Go to the style.org 
-   2. Add the stylings in the respective section for enhancements if needed. 
+   2. Add the stylings in the respective section for
+      enhancements if needed.
    
 
 
