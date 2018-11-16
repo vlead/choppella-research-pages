@@ -17,52 +17,76 @@ to update the content of the pages.
   This document details the structure of the Choppella's research
   lab web pages and the steps to be followed to update the content of
   the pages.
-
-* Repository Follow the
-  [[https://github.com/vlead/choppella-research-pages][link]] to
-  access the repository of Gitlab containing sources of these pages.
+* Repository 
+  Follow the [[https://github.com/vlead/choppella-research-pages][link]] to access the repository of Gitlab containing
+  sources of these pages.
 
 * Structure 
   This repository is organized as follows : 
   Structure and the purpose of each directory 
-  choppella research lab/
+  choppella research lab
 
 ** Strcuture of the repo
-    The repository must have a src folder and all the source files  must be under src directory.
- Example ::     
+   The repository must have a src folder and all the source files must
+   be under src directory.  Example ::
 
   |--- README.org
   |--- make
   |--- init
-     |--- index.org
-     |--- src
-          |--- header.org
-          |--- slider.org
-	  |--- home.org
-	  |--- team.org
-          |--- research.org
-	  |--- publication.org
-	  |--- teaching.org
-	  |--- jobs.org
-	  |--- contact.org
-          |--- style
-	       |--- style 
-	            |--- style.css
-	       |--- js
-	            |--- main.js
-	       
+  |--- index.org
+       |--- src
+            |--- header.org
+            |--- slider.org
+	    |--- home.org
+	    |--- team.org
+            |--- research.org
+	    |--- publication.org
+	    |--- teaching.org
+	    |--- jobs.org
+	    |--- contact.org
+            |--- style
+	         |--- style 
+	              |--- style.css
+	         |--- js
+	              |--- main.js
+
+* Steps to build 
+  Build Since code is situated within the narrative, one has to build
+  from these documents to generate code and documents for
+  publication. While the code is understood by the compiler, the
+  documents published in htm.
+
+** Steps to build and run the appliciton
+   Refer to a sample makefile for reference. 
+
+   #SHELL := /bin/bash
+   CODE_DIR=build/code
+   PWD=$(shell pwd)
+   LINT_FILE=${PWD}/${CODE_DIR}/lint_output
+   EXIT_FILE=${PWD}/exit.txt
+   STATUS=0
+   
+   all:  build
+   
+   init: 
+   ./init.sh
+   
+   build: init
+   make -f tangle-make -k all
+   
+   clean:	
+         make -f tangle-make clean
+   
+   
+** Run the following command to build 
+   make -k all
 
 
-* Steps to build and test
- Build Since code is situated within the narrative, one has to build
- from these documents to generate code and documents for
- publication. While the code is understood by the compiler, the
- documents published in htm.
 
 ** Build Directory and .gitignore
-    The build process generates a build folder containing docs and
-    code directories. This build folder is not version controlled
-    since it is generated. To allow git to ignore generated files.
+   The build process generates a build folder containing docs and code
+   directories. This build folder is not version controlled since it
+   is generated. To allow git to ignore generated files.
 
     build/
     code/
@@ -72,45 +96,17 @@ to update the content of the pages.
     src/style
     elisp          
     
-** Build
-   Refer to a sample makefile for reference. 
-
-    #SHELL := /bin/bash
-
-    CODE_DIR=build/code
-    PWD=$(shell pwd)
-    LINT_FILE=${PWD}/${CODE_DIR}/lint_output
-    EXIT_FILE=${PWD}/exit.txt
-    STATUS=0
-
-    all:  build
-
-    init: 
-           	./init.sh
-
-    build: init
-           	make -f tangle-make -k all
-
-    clean:	
-             make -f tangle-make clean
-        
-    Run the following command to build 
-    make -k all
-
-* Steps to host
-  Step1: Take the build copy from the repository 
-  Step2: Host source files (build) in the respective server 
+* Steps to host and test
+  
+  - Host source files (build) in the respective server 
     
-
 * Steps to add content for pages
 ** Index.org 
    Purpose :: This file contains all source (.org) pages. 
-   Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/index.org][header]]
+   Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/index.org][index]]
    Instructions ::
-   1. Include all pages files in the index using the following command
+   1. Include all pages in the index.org using the following command
       example:  #+include: "./src/header.org"
-   
-   
 ** Header section 
    Purpose :: Header section consists logo research lab name and search bar.
    Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/header.org][header]]
@@ -125,12 +121,11 @@ to update the content of the pages.
    Instructions :: 
    1. Go to the slider.org
    2. Upload the files on [[files.vlabs.ac.in/][fileserver]]
-   3. Take the link and add in the slider section. 
+   3. Take the url and add in the slider section. 
      
-
 ** Home
    Purpose :: Home section consists details about research lab,
-   content should add in the  home.org. 
+   content should add in the home.org. 
    Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/home.org][home]]
    Instructions :: 
    1. Go to the home.org
@@ -144,7 +139,7 @@ to update the content of the pages.
    Instructions :: 
    1. Go to the team.org
    2. Upload photos on [[files.vlabs.ac.in/][fileserver]] and update url on team section.  
-   3. Add the student name in name field and research topic name on research-topic field
+   3. Add the student name in the "name field" and research topic name on "research-topic field". 
 
 ** Research 
    Purpose :: Research section consists research areas and funded projects
@@ -153,9 +148,8 @@ to update the content of the pages.
    Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/research.org][research]]
    Instructions : 
    1. Go to the research.org 
-   2. Add research topic in the resection section
+   2. Add research topic in the resection section. 
   
-
 ** Publications 
    Purpose :: Publicaitons section consists detaisl of all published papers like
    paper title, conference details, author names, DOI details (along
@@ -165,8 +159,8 @@ to update the content of the pages.
    Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/publications.org][publications]]
    Instructions :: 
    1. Go to the publication.org
-   2. Add publicaiton title, conference name, authors details, DOI details and published website details in the publicaiton menu  
-   
+   2. Add publicaiton title, conference name, authors details, DOI
+      details and published website details in the publicaiton menu
    
 ** Teaching  
    Purpose :: Teaching section consists detaisl of all teaching topics content
