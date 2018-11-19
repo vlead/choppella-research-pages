@@ -22,7 +22,7 @@
 ** Structure of the repo
    The repository must have a src folder and all the source files must
    be under src directory.  Example ::
-
+   #+BEGIN_EXAMPLE
   |---README.org
   |---make
   |---init
@@ -42,6 +42,9 @@
 	           |---style.css
 	       |---js
 	           |---main.js
+    #+END_EXAMPLE
+
+
 
 * Steps to build 
   Since code is situated within the narrative, one has to
@@ -52,32 +55,39 @@
 ** Steps to build and run the appliciton
    Refer to a sample makefile for reference. 
 
-   #SHELL := /bin/bash
-   CODE_DIR=build/code
-   PWD=$(shell pwd)
-   LINT_FILE=${PWD}/${CODE_DIR}/lint_output
-   EXIT_FILE=${PWD}/exit.txt
-   STATUS=0
-   
-   all:  build
-   
-   init: 
-   ./init.sh
-   
-   build: init
-   make -f tangle-make -k all
-   
-   clean:	
+    #+BEGIN_EXAMPLE
+    
+    #SHELL := /bin/bash
+    CODE_DIR=build/code
+    PWD=$(shell pwd)
+    LINT_FILE=${PWD}/${CODE_DIR}/lint_output
+    EXIT_FILE=${PWD}/exit.txt
+    STATUS=0
+    
+    all:  build
+    
+    init: 
+    ./init.sh
+    
+    build: init
+    make -f tangle-make -k all
+    
+    clean:	
          make -f tangle-make clean
+    
+    #+END_EXAMPLE
+
    
    
 ** Run the following command to build 
-   make -k all
+   =make -k all=
 ** Build Directory and .gitignore
    The build process generates a build folder containing
    docs and code directories. This build folder is not
    version controlled since it is generated and to allow git
    to ignore generated files.
+
+    #+BEGIN_EXAMPLE
 
     build/
     code/
@@ -86,6 +96,8 @@
     style/
     src/style
     elisp          
+    #+END_EXAMPLE
+
     
 * Steps to host and test
   
@@ -99,7 +111,7 @@
 
    Instructions ::
    1. Include all pages in the index.org using the following
-      command example: #+include: "./src/header.org"
+      command example: =#+include: "./src/header.org"=
 
 ** Header section 
    Purpose :: Header section consists logo research lab name
