@@ -1,22 +1,6 @@
-+DATE: <2018-10-02 Tue>
-#+PROPERTY: results output
-#+PROPERTY: exports code
-#+SETUPFILE: ../org-templates/level-1.org
-#+options: ^:nil
-#+LATEX: Literal LaTeX code for export
-#+TAGS: boilerplate(b)
-#+EXCLUDE_TAGS: boilerplate
-
-* Introduction
-  This has all the styles required to design the
-  =choppella research lab=
-* Style Sheets
-  The following =CSS= applies the styles to =choppella research lab= 
-#+NAME: style-sheets
-#+BEGIN_SRC css
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700,500,600);
-
-  body{
+#+Name: pages-styles
+#+BEGIN_SRC css  
+body{
   font-family: 'Source Sans Pro', sans-serif;
   }
   .footer {
@@ -39,19 +23,20 @@
   border: box-border;
   box-sizing: border-box;
   }
-  .nav-tabs > li{
+
+.nav-tabs > li{
   /*width:14.28%;*/
   box-sizing: border-box;
   text-align: center;
   border-left: 0.0625em solid #c7c1ad;
   }
-  .area-padding {
+.area-padding {
   padding: 70px 0px 80px;
   padding-top: 70px;
   padding-top: 70px;
   padding-top: 38px;
   background: #f2f1eb;}
-  .nav-tabs > li > a{
+.nav-tabs > li > a{
   margin-right: 2px;
   line-height: 1.42857143;
   height:46px;
@@ -62,7 +47,7 @@
   text-transform: uppercase;
   border-bottom:1px solid #ddd;
   }
-  .latestupdates{
+.latestupdates{
   padding: 5px 0 0 10px;
   font: normal 140% Arial, Helvetica, sans-serif;
   height: 30px;
@@ -76,7 +61,8 @@
   
   .nav-tabs > li > a:hover{
   }
-  .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
   border-radius: 0;
   background-color: #fff;
   color: #9d9573;
@@ -123,15 +109,15 @@
   padding-right: 4px \9;
   padding-left: 3px;
   padding-left: 4px \9;
-  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
   
   margin-bottom: 0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
+
+  /*-moz-border-radius: 3px;*/
   border-radius: 24px;
   }
-  
-  #custom-search-input button {
+
+#custom-search-input button {
   border: 0;
   background: none;
   /** belows styles are working good */
@@ -141,13 +127,13 @@
   left: -28px;
   /* IE7-8 doesn't have border-radius, so don't indent the padding */
   margin-bottom: 0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
+ /* -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;*/
   border-radius: 3px;
   color:#D9230F;
   }
   
-  .search-query:focus + button {
+.search-query:focus + button {
   z-index: 3;   
   }
 
@@ -224,8 +210,6 @@ height: 25px;
     border-radius: 50%;
     
 }
-
-
 ul li {
 line-height: 125%;
 }
@@ -248,32 +232,32 @@ padding-left:28px;
 }
 
 .show {
-    	display: none !important;
-      }
-
-
-
-
-
-
-
-
-
-
-
+    display: none !important;}
   
+.fa-stack{
+display: inline-block;
+height: 2em;
+line-height: 2em;
+position: relative;
+vertical-align: middle;
+width: 1.5em;
+}
 
-
-
-
-
-#+END_SRC
+#+END_SRC  
 
 * Tangle                                       :boilerplate:
-** CSS
-#+BEGIN_SRC css :tangle css/style.css :eval no :noweb yes 
-<<style-sheets>>
+** style css
+#+BEGIN_SRC css :tangle css/style.css :eval no :noweb yes
+<<pages-styles>>
 #+END_SRC
+
+
+
+
+
+
+
+
 
 
 
