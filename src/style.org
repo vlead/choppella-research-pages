@@ -205,7 +205,7 @@ font-style: normal;
 .icon-background{
 
 height: 25px;
-    width: 25px;
+    width: 25px !important;
     background-color:#eaab00;
     border-radius: 50%;
     
