@@ -8,18 +8,6 @@
 #+LATEX: Literal LaTeX code for export
 #+TAGS: boilerplate(b)
 #+EXCLUDE_TAGS: boilerplate
-
-#+TITLE: HTML Files
-#+AUTHOR: VLEAD
-#+DATE: <2018-10-02 Tue>
-#+PROPERTY: results output
-#+PROPERTY: exports code
-#+SETUPFILE: ../org-templates/level-1.org
-#+options: ^:nil
-#+LATEX: Literal LaTeX code for export
-#+TAGS: boilerplate(b)
-#+EXCLUDE_TAGS: boilerplate
-
 * Html structure
 #+NAME: index-html
 #+BEGIN_SRC html
@@ -43,11 +31,11 @@
       </div>
       <div id="custom-search-input">
         <div class="input-group ">
-          <input type="text" class="  search-query form-control" placeholder="Search" />
+         <!-- <input type="text" class="  search-query form-control" placeholder="Search" />
           <span class="input-group-btn">
             <button class="btn btn-danger" type="button">
               <span class=" glyphicon glyphicon-search"></span>
-            </button>
+            </button>-->
           </span>
         </div>
       </div>

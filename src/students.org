@@ -131,7 +131,7 @@
 		<div class="col-md-4">
 		  <div class="thumbnail">
 		    <a href="" target="_blank">
-		      <img src="./img/team/venk.jpg" alt="Lights" style="width:100%">
+		      <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/venk.jpg" alt="Lights" style="width:100%">
 		      <div class="caption">
 		      </div>
 		    </a>
@@ -150,7 +150,7 @@
 		<div class="col-md-4">
 		  <div class="thumbnail">
 		    <a href="" target="_blank">
-		      <img src="./img/team/student.jpg" alt="Lights" style="width:100%">
+		      <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/student.jpg" alt="" style="width:100%">
 		      <div class="caption">
 			<p><b>Name:</b> Mrityunjay Kumar (PhD) </p>
 			<p> <b>Research topic:</b> Model Based design and implementation of Virtual Lab Experiments </p>
@@ -161,7 +161,7 @@
 		<div class="col-md-4">
 		  <div class="thumbnail">
 		    <a href="" target="_blank">
-		      <img src="./img/team/student.jpg" alt="Lights" style="width:100%">
+		      <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/student.jpg" alt="" style="width:100%">
 		      <div class="caption">
 			<p><b>Name:</b> Sai Gollapudi (PhD)  </p>
 			<p> <b>Research topic:</b> Semantic Style Sheets</p>
@@ -183,7 +183,7 @@
 		<div class="col-md-4">
 		  <div class="thumbnail">
 		    <a href="" target="_blank">
-		      <img src="./img/team/student.jpg" alt="Lights" style="width:100%">
+		      <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/student.jpg" alt="" style="width:100%">
 		      <div class="caption">
 			<p><b>Name:</b> Soumya Maddala (MS by research) </p>
 			<p> <b>Research topic:</b> Model Based design and implementation of Virtual Lab Experiments </p>
@@ -194,7 +194,7 @@
 		<div class="col-md-4">
 		  <div class="thumbnail">
 		    <a href="" target="_blank">
-		      <img src="./img/team/student.jpg" alt="Lights" style="width:100%">
+		      <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/student.jpg" alt="" style="width:100%">
 		      <div class="caption">
 			<p><b>Name:</b> S Adhish Singla (MS Dual Degree)  </p>
 			<p> <b>Research topic:</b> Distributed Model Checking. Supported by Hitachi India. (Principal advisor: Prof. Suresh Purini) </p>
@@ -205,7 +205,7 @@
 		<div class="col-md-4">
 		  <div class="thumbnail">
 		    <a href="" target="_blank">
-		      <img src="./img/team/student.jpg" alt="Lights" style="width:100%">
+		      <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/student.jpg" alt="" style="width:100%">
 		      <div class="caption">
 			<p><b>Name:</b> Arjun Sanjeev (BTech/Dual Degree) </p>
 			<p> <b>Research topic:</b> Modular Control of concurrent processes. Co-advisor: Prof. K Viswanath.  </p>
@@ -228,7 +228,7 @@
 		<div class="col-md-4">
 		  <div class="thumbnail">
 		    <a href="" target="_blank">
-		      <img src="./img/team/student.jpg" alt="Lights" style="width:100%">
+		      <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/student.jpg" alt="" style="width:100%">
 		      <div class="caption">
 			<p><b>Name:</b> Deepti Aggarwal (MS by research, Nov 2013)  </p>
 			<p> <b>Thesis title:</b>  Exploring Crowdsourcing to PersonalizeWeb Experiences</p>
