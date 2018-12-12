@@ -114,8 +114,7 @@
       command example: =#+include: "./src/header.org"=
 
 ** Header section 
-   Purpose :: Header section consists logo research lab name
-   and search bar.  
+   Purpose :: Header section consists logo and Research Lab name.
 
    Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/header.org][header.org]]
 
@@ -125,9 +124,10 @@
 
 ** Slider section 
    Purpose:: Slider section consists of 
-   1. Slider : This will slide different posters.
-   2. Latest updates : Latest updates will have current
-      updates of positions at research center.  
+   1. Slider : Slide show of various poster/Images 
+   2. Latest updates : Latest news at Research Lab.  Basic Content
+      added as per your pascal ( ) pages. Need list and links to
+      relevant posters/images that you want to display.
       
    Filename with link :: [[https://github.com/vlead/choppella-research-pages/blob/master/src/slider.org][slider]].org
    
@@ -138,8 +138,8 @@
      
 ** Home
    
-   Purpose:: Home section consists details about research
-   lab, content should add in the home.org.  
+   Purpose:: This page captures the overview of the Research Lab. 
+   Content should add in the home.org.  
 
    Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/home.org][home]].org 
 
@@ -148,9 +148,9 @@
    2. Add the content about search lab in the home menu. 
 
 ** Team
-   Purpose:: Team section consists students details like photo, name and
-   research topic.  photos (Professor/Students) needs to be update.
-   content should add in the team.org. 
+   Purpose:: This page captures the information of each student long
+   with their pic, name and research topic. Required student
+   information. Content should add in the team.org.
 
    Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/students.org][team.org]]
 
@@ -162,10 +162,9 @@
       topic name on "research-topic field".
 
 ** Research 
-   Purpose:: Research section consists research areas and
-   funded projects details.  Content added from the Content
-   added from the pascal [[http://pascal.iiit.ac.in/~choppell/research/][link]] website content should add in
-   the research.org.
+   Purpose:: This page captures all your research topics and funded
+   project that yor are involved with. Basic content added from the Content added from the
+   pascal([[http://pascal.iiit.ac.in/~choppell/research/][link)]] pages. Content should add in the research.org.
 
    Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/research.org][research.org]]
    
@@ -174,11 +173,12 @@
    2. Add research topic in the resection section. 
   
 ** Publications 
-   Purpose:: Publicaitons section consists detaisl of all published papers like
-   paper title, conference details, author names, DOI details (along
-   with url), website details (along with url), published year and
-   pages.  Content added from the Content added from the pascal [[http://pascal.iiit.ac.in/~choppell/research/][link]]
-   website
+   Purpose:: This page captures all your publications with title,
+   conference name, authors name, DOI number and website link (where
+   the paper housted). It aslo allows one to filter the publications
+   (like All publications, Conference Proceedings, Poster
+   Publicaitons, Featured Publications and Journal Articles). Basic
+   content added from the pascal([[http://pascal.iiit.ac.in/~choppell/research/][link]]) pages.
    
    Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/publications.org][publications.org]]
    
@@ -188,10 +188,9 @@
       details and published website details in the publicaiton menu
    
 ** Teaching  
-   Purpose:: Teaching section consists detaisl of all teaching topics content
-   added from the Content added from the pascal [[http://pascal.iiit.ac.in/~choppell/research/][link]] website if more
-   content needs to be added update the content in the section of
-   teaching.org.
+   Purpose:: This page captures all courses taught by you till date
+   Basic content added from pascal [[http://pascal.iiit.ac.in/~choppell/research/][link]] pages. If more content needs
+   to be added update the content in the section of teaching.org.
 
    Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/teaching.org][teaching]].org
 
@@ -200,10 +199,10 @@
    2. Add course details in the teaching menu
    
 ** Job 
-   Purpose:: Job Section consists details of current positions like PhD
-   Positions, MS by Research Positions, 2018 Summer Internships and
-   BTech and MTech Projects. if more content needs to be added update
-   the content in the section of job.org.
+   Purpose:: This page captures the various positions available at
+   Research Lab (PhD Positions, MS by Research Positions, 2018 Summer
+   Internships and BTech and MTech Projects). Basic content added as
+   per your pascal page.
 
    Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/job.org][job.org]] 
 
