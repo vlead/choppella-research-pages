@@ -211,11 +211,11 @@
    2. Add content about job details in the job menu
    
 ** Contact 
-   Purpose:: Contact Section consists details of research lab Location, Mail
-   address, office/admin Phone numbers, professor email id, route map,
-   Office Hours for 2018 Monsoon and Appointment details. all details
-   added form the pascal [[http://pascal.iiit.ac.in/~choppell/research/][link]] website.  if more details needs to be
-   added, update in the section of contact.org.
+   Purpose:: This page captures the contact information about Research
+   Lab (address, email, phone number and google map route, working
+   hours and appointments) Basic Content added form the pascal( [[http://pascal.iiit.ac.in/~choppell/research/][link]] )
+   website.  if more details needs to be added, update in the section
+   of contact.org.
 
    Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/contact-us.org][contact.org]]
 
@@ -224,9 +224,8 @@
    2. Update the contact details in the job menu
    
 ** Footer section 
-   Purpose:: Footer section consists only insitute logo and research lab name
-   details. if more details needs to be added, update in the section
-   of footer.org.
+   Purpose:: This section consists of only Institute logo and Research
+   Lab Name. 
 
    Filename with link:: [[https://github.com/vlead/choppella-research-pages/blob/master/src/footer.org][footer]].org
 
