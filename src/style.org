@@ -1,3 +1,14 @@
+#+TITLE: HTML Files
+#+AUTHOR: VLEAD
+#+DATE: <2018-10-02 Tue>
+#+PROPERTY: results output
+#+PROPERTY: exports code
+#+SETUPFILE: ../org-templates/level-1.org
+#+options: ^:nil
+#+LATEX: Literal LaTeX code for export
+#+TAGS: boilerplate(b)
+#+EXCLUDE_TAGS: boilerplate
+
 #+Name: pages-styles
 #+BEGIN_SRC css  
 body{
