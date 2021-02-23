@@ -1,17 +1,3 @@
-#+TITLE: HTML Files
-#+AUTHOR: VLEAD
-#+DATE: <2018-10-02 Tue>
-#+PROPERTY: results output
-#+PROPERTY: exports code
-#+SETUPFILE: ../org-templates/level-1.org
-#+options: ^:nil
-#+LATEX: Literal LaTeX code for export
-#+TAGS: boilerplate(b)
-#+EXCLUDE_TAGS: boilerplate
-
-* Html structure
-#+NAME: index-html
-#+BEGIN_SRC html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -28,9 +13,18 @@
   <nav class="navbar navbar-light" style="background-color: #8c1515;">
     <div class="container">
       <div class="navbar-header col-md-8" >
-        <p class="navbar-brand logo" href="#" >IIIT-H  </p><p class="name"> | Choppella Research Lab</p>
+        <p class="navbar-brand logo" href="#" style="color:white">IIIT-H | Choppella Research Lab </p>
       </div>
-      
+      <div id="custom-search-input">
+        <div class="input-group ">
+          <input type="text" class="  search-query form-control" placeholder="Search" />
+          <span class="input-group-btn">
+            <button class="btn btn-danger" type="button">
+              <span class=" glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+      </div>
   </nav>
   <div class="container-fluid banner">
     <div class="container">
@@ -46,13 +40,13 @@
 	    <!-- Wrapper for slides -->
 	    <div class="carousel-inner">
 	      <div class="item active">
-		 <img src="http://files.vlabs.ac.in/choppella-research-pages/images/slider/slider1.jpeg" alt="" style="width:100%;">
+		<img src="img/cs1.png" alt=" " style="width:100%;">
 	      </div>
 	      <div class="item">
-		<img src="http://files.vlabs.ac.in/choppella-research-pages/images/slider/slider3.jpeg" alt="" style="width:100%;">
+		<img src="img/cs1.png" alt=" " style="width:100%;">
 	      </div>
 	      <div class="item">
-		<img src="http://files.vlabs.ac.in/choppella-research-pages/images/slider/slider1.jpeg" alt="" style="width:100%;">
+		<img src="img/cs1.png" alt="" style="width:100%;">
 	      </div>
 	    </div>
 	    <!-- Left and right controls -->
@@ -66,6 +60,7 @@
 	    </a>
 	  </div>
 	</div>
+<br></br>
 	<div class="col-md-4"><h4 class="latestupdates">Latest Updates</h4>
 	  <p><b>Research Grants: </b>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 	  <hr/>
@@ -77,8 +72,8 @@
   <div class="faq-area area-padding">
     <div class="container" style="border: 0.0625em solid #c7c1ad;padding: 0;">
       <ul class="nav nav-tabs">
-	<li class="active"><a data-toggle="tab" style ="padding: 12px 52px;"  href="#home">HOME</a></li>
-	<li><a style ="padding: 12px 52px;" data-toggle="tab" href="#menu1">TEAM</a></li>
+	<li class="active"><a data-toggle="tab" style ="padding: 12px 42.5px;"  href="#home">HOME</a></li>
+	<li><a style ="padding: 12px 42.5px;" data-toggle="tab" href="#menu1">TEAM</a></li>
 	<li><a data-toggle="tab" style ="padding: 12px 52px;"  href="#menu2">RESEARCH</a></li>
 	<li><a data-toggle="tab" style ="padding: 12px 52px;" href="#menu3">PUBLICATIONS</a></li>
 	<li><a data-toggle="tab" style ="padding: 12px 52px;" href="#menu4">TEACHING</a></li>
@@ -133,7 +128,7 @@
 		<div class="col-md-4">
 		  <div class="thumbnail">
 		    <a href="" target="_blank">
-		      <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/venk.jpg" alt="" style="width:100%">
+		      <img src="img/placeholder.png" alt="Lights" style="width:100%">
 		      <div class="caption">
 		      </div>
 		    </a>
@@ -152,7 +147,7 @@
 		<div class="col-md-4">
 		  <div class="thumbnail">
 		    <a href="" target="_blank">
-		      <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/student.jpg" alt="" style="width:100%">
+		      <img src="img/placeholder.png" alt="Lights" style="width:100%">
 		      <div class="caption">
 			<p><b>Name:</b> Mrityunjay Kumar (PhD) </p>
 			<p> <b>Research topic:</b> Model Based design and implementation of Virtual Lab Experiments </p>
@@ -163,7 +158,7 @@
 		<div class="col-md-4">
 		  <div class="thumbnail">
 		    <a href="" target="_blank">
-		      <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/student.jpg" alt="" style="width:100%">
+		      <img src="img/placeholder.png" alt="Lights" style="width:100%">
 		      <div class="caption">
 			<p><b>Name:</b> Sai Gollapudi (PhD)  </p>
 			<p> <b>Research topic:</b> Semantic Style Sheets</p>
@@ -174,7 +169,7 @@
 		<div class="col-md-4">
 	      <div class="thumbnail">
 		<a href="" target="_blank">
-		  <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/student.jpg" alt="" style="width:100%">
+		  <img src="img/placeholder.png" alt="Lights" style="width:100%">
 		  <div class="caption">
 		    <p><b>Name:</b> Siddharth Bhat (BTech/Dual Degree)  </p>
 		    <p> <b>Research topic:</b> Formal verification of Loop Transformations using the Coq theorem prover </p>
@@ -185,7 +180,7 @@
 		<div class="col-md-4">
 		  <div class="thumbnail">
 		    <a href="" target="_blank">
-		      <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/student.jpg" alt="" style="width:100%">
+		      <img src="img/placeholder.png" alt="Lights" style="width:100%">
 		      <div class="caption">
 			<p><b>Name:</b> Soumya Maddala (MS by research) </p>
 			<p> <b>Research topic:</b> Model Based design and implementation of Virtual Lab Experiments </p>
@@ -196,7 +191,7 @@
 		<div class="col-md-4">
 		  <div class="thumbnail">
 		    <a href="" target="_blank">
-		      <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/student.jpg" alt="" style="width:100%">
+		      <img src="img/placeholder.png" alt="Lights" style="width:100%">
 		      <div class="caption">
 			<p><b>Name:</b> S Adhish Singla (MS Dual Degree)  </p>
 			<p> <b>Research topic:</b> Distributed Model Checking. Supported by Hitachi India. (Principal advisor: Prof. Suresh Purini) </p>
@@ -207,7 +202,7 @@
 		<div class="col-md-4">
 		  <div class="thumbnail">
 		    <a href="" target="_blank">
-		      <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/student.jpg" alt="" style="width:100%">
+		      <img src="img/placeholder.png" alt="Lights" style="width:100%">
 		      <div class="caption">
 			<p><b>Name:</b> Arjun Sanjeev (BTech/Dual Degree) </p>
 			<p> <b>Research topic:</b> Modular Control of concurrent processes. Co-advisor: Prof. K Viswanath.  </p>
@@ -219,7 +214,7 @@
 		<div class="col-md-4">
 		  <div class="thumbnail">
 		    <a href="" target="_blank">
-		      <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/student.jpg" alt="" style="width:100%">
+		      <img src="img/placeholder.png" alt="Lights" style="width:100%">
 		      <div class="caption">
 			<p><b>Name:</b> Akaash Agarwall (MS by research, Apr 2018)  </p>
 			<p> <b>Thesis title: </b> Application, Modelling and Implementation of CORP </p>
@@ -230,7 +225,7 @@
 		<div class="col-md-4">
 		  <div class="thumbnail">
 		    <a href="" target="_blank">
-		      <img src="http://files.vlabs.ac.in/choppella-research-pages/images/team/student.jpg" alt="" style="width:100%">
+		      <img src="img/placeholder.png" alt="Lights" style="width:100%">
 		      <div class="caption">
 			<p><b>Name:</b> Deepti Aggarwal (MS by research, Nov 2013)  </p>
 			<p> <b>Thesis title:</b>  Exploring Crowdsourcing to PersonalizeWeb Experiences</p>
@@ -1939,6 +1934,21 @@ doi>10.1145/2207016.2207030 (https://dl.acm.org/citation.cfm?doid=2207016.220703
 
 	  
 	
+<nav aria-label="Page navigation example">
+  <ul class="pagination pg-blue">
+    <li class="page-item disabled">
+      <a class="page-link" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link">1</a></li>
+    <li class="page-item active">
+      <a class="page-link">2 <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link">3</a></li>
+    <li class="page-item">
+      <a class="page-link">Next</a>
+    </li>
+  </ul>
+</nav>	
 
 
 
@@ -2062,7 +2072,7 @@ doi>10.1145/2207016.2207030 (https://dl.acm.org/citation.cfm?doid=2207016.220703
     </div>
   </div>
   <div class="container-fluid" style="background-color:#8c1515;">
-	 <p class="navbar-brand logo" href="#" >IIIT-H  </p><p class="name"> | Choppella Research Lab</p>
+	 <p class="navbar-brand logo" href="#" style="color:white">IIIT-H | Choppella Research Lab </p>
    <!-- <img src="img/logo/iiith-logo.png" style=" height:100px; padding-left:75px;">-->
   </div>
 
@@ -2072,14 +2082,8 @@ doi>10.1145/2207016.2207030 (https://dl.acm.org/citation.cfm?doid=2207016.220703
 </body>
 </html>
 
-#+END_SRC
 
 
-* Tangle                                       :boilerplate:
-** Index HTML
-#+BEGIN_SRC html :tangle index.html :eval no :noweb yes
-<<index-html>>
-#+END_SRC
 
 
 
